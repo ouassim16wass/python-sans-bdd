@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercice 12</title>
+  </head>
+  <body>
+    <h2>Resultat Exercice 12</h2>
+    <table border="1">
+      <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Points</th>
+      </tr>
+
+      {% for person in data %}
+      <tr>
+        <td>{{person["nom"]}}</td>
+        <td>{{person["prenom"]}}</td>
+        <td>{{person["points"]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
